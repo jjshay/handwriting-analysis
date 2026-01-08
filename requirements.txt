@@ -1,0 +1,18 @@
+# Handwriting Analysis System - Requirements
+
+# Core - Required
+opencv-python>=4.8.0       # Image processing
+numpy>=1.24.0              # Numerical analysis
+Pillow>=10.0.0             # Image handling
+
+# Optional - Statistical analysis
+scipy>=1.11.0              # Advanced statistics
+
+# Optional - AI Review
+requests>=2.31.0           # API calls
+python-dotenv>=1.0.0       # Environment variables
+matplotlib>=3.7.0          # Visualization
+aiohttp>=3.8.0             # Async HTTP
+
+# Optional - Report generation
+reportlab>=4.0.0           # PDF reports

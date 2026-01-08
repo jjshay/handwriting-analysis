@@ -1,0 +1,25 @@
+# Environment
+.env
+*.key
+
+# Output
+demo_output/
+reports/
+analysis_results/
+
+# Sample images (may be sensitive)
+samples/
+questioned/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
