@@ -1,0 +1,85 @@
+═══════════════════════════════════════════════════════════════════════
+                    FORENSIC HANDWRITING ANALYSIS REPORT
+═══════════════════════════════════════════════════════════════════════
+
+Document ID:        QD-2025-0142
+Analysis Date:      2025-01-10
+Examiner System:    Statistical Signature Authentication v2.1
+Baseline Samples:   70 known authentic signatures
+
+───────────────────────────────────────────────────────────────────────
+                           METHODOLOGY
+───────────────────────────────────────────────────────────────────────
+
+This analysis employs statistical comparison of measurable handwriting
+features between a questioned signature and a baseline of authenticated
+exemplars. Features are extracted using computer vision algorithms and
+compared using z-score analysis and Mahalanobis distance calculations.
+
+───────────────────────────────────────────────────────────────────────
+                      BASELINE STATISTICS
+───────────────────────────────────────────────────────────────────────
+
+Feature              Mean        Std Dev     Sample Size
+─────────────────────────────────────────────────────────
+Slant Angle          71.5°       4.2°        70
+Height Ratio         2.60        0.30        70
+Aspect Ratio         2.80        0.40        70
+Stroke Width         3.8px       0.8px       70
+Pressure Variance    0.25        0.08        70
+Connectedness        62%         10%         70
+Loop Ratio           0.35        0.08        70
+
+───────────────────────────────────────────────────────────────────────
+                    QUESTIONED DOCUMENT FEATURES
+───────────────────────────────────────────────────────────────────────
+
+Feature              Value       Z-Score     Status
+─────────────────────────────────────────────────────────────────────
+Slant Angle          73.2°       +0.40       WITHIN RANGE
+Height Ratio         2.80        +0.67       WITHIN RANGE
+Aspect Ratio         2.90        +0.25       WITHIN RANGE
+Stroke Width         4.1px       +0.38       WITHIN RANGE
+Pressure Variance    0.28        +0.38       WITHIN RANGE
+Connectedness        58%         -0.40       WITHIN RANGE
+Loop Ratio           0.38        +0.38       WITHIN RANGE
+
+───────────────────────────────────────────────────────────────────────
+                       STATISTICAL SUMMARY
+───────────────────────────────────────────────────────────────────────
+
+Combined Z-Score (RMS):     0.42
+Mahalanobis Distance:       0.50
+Features within 1 SD:       7/7 (100%)
+Features within 2 SD:       7/7 (100%)
+
+CONFIDENCE LEVEL:           96.8%
+
+───────────────────────────────────────────────────────────────────────
+                          CONCLUSION
+───────────────────────────────────────────────────────────────────────
+
+Based on the statistical analysis of seven measurable handwriting
+features, the questioned signature is:
+
+    ╔═══════════════════════════════════════════════════════════════╗
+    ║    CONSISTENT WITH KNOWN AUTHENTIC SAMPLES                    ║
+    ╚═══════════════════════════════════════════════════════════════╝
+
+All measured features fall within expected statistical ranges when
+compared against the baseline of 70 authenticated exemplars. The
+combined z-score of 0.42 indicates high similarity to the authentic
+signature population.
+
+───────────────────────────────────────────────────────────────────────
+                         LIMITATIONS
+───────────────────────────────────────────────────────────────────────
+
+• Statistical analysis provides probability estimates, not certainty
+• Results should be verified by qualified forensic document examiner
+• Analysis quality depends on image resolution and sample size
+• This system is intended as a screening tool, not definitive proof
+
+───────────────────────────────────────────────────────────────────────
+                         END OF REPORT
+═══════════════════════════════════════════════════════════════════════
