@@ -1,6 +1,9 @@
 # Handwriting Analysis System
 
 ![CI](https://github.com/jjshay/handwriting-analysis/workflows/CI/badge.svg)
+![CodeQL](https://github.com/jjshay/handwriting-analysis/workflows/CodeQL/badge.svg)
+[![codecov](https://codecov.io/gh/jjshay/handwriting-analysis/branch/main/graph/badge.svg)](https://codecov.io/gh/jjshay/handwriting-analysis)
+![Release](https://img.shields.io/github/v/release/jjshay/handwriting-analysis)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-enabled-brightgreen.svg)
