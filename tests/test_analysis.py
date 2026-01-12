@@ -28,13 +28,28 @@ class TestBaselineData:
         with open(baseline_path) as f:
             data = json.load(f)
 
-        required_features = ["slant_angle", "height_ratio", "stroke_width", "pressure_variance"]
+        required_features = ["slant_angle", "height_ratio", "aspect_ratio", "stroke_width",
+                            "pressure_variance", "connectedness", "loop_ratio"]
         stats = data["baseline_statistics"]
 
         for feature in required_features:
             assert feature in stats, f"Missing feature: {feature}"
             assert "mean" in stats[feature], f"{feature} should have mean"
             assert "std" in stats[feature], f"{feature} should have std"
+            assert "unit" in stats[feature], f"{feature} should have unit"
+
+    def test_baseline_info_fields(self):
+        """Verify baseline_info has required fields"""
+        baseline_path = Path(__file__).parent.parent / "examples" / "sample_baseline_data.json"
+        with open(baseline_path) as f:
+            data = json.load(f)
+
+        assert "baseline_info" in data, "Should have baseline_info"
+        info = data["baseline_info"]
+        assert "subject_name" in info, "Should have subject_name"
+        assert "sample_count" in info, "Should have sample_count"
+        assert "collection_date" in info, "Should have collection_date"
+        assert "document_types" in info, "Should have document_types"
 
 
 class TestStatisticalMethods:
@@ -100,6 +115,6 @@ class TestForensicReport:
         with open(report_path) as f:
             content = f.read()
 
-        required_sections = ["FEATURE COMPARISON", "STATISTICAL ANALYSIS", "CONCLUSION"]
+        required_sections = ["METHODOLOGY", "BASELINE STATISTICS", "STATISTICAL SUMMARY", "CONCLUSION"]
         for section in required_sections:
             assert section in content, f"Report should contain {section} section"
