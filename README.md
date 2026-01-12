@@ -1,5 +1,10 @@
 # Handwriting Analysis System
 
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-enabled-brightgreen.svg)
+![AI Optional](https://img.shields.io/badge/AI-optional-lightgrey.svg)
+
 **Forensic-grade signature and handwriting analysis - statistical comparison for authentication.**
 
 ---
@@ -21,17 +26,33 @@ Analyze signatures and handwriting for authenticity:
 
 ---
 
-## Quick Demo
+## Quick Start
 
 ```bash
+# Clone the repo
+git clone https://github.com/jjshay/handwriting-analysis.git
+cd handwriting-analysis
+
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the demo
+# Run the interactive demo
 python demo.py
 
-# See analysis results
+# Or run the visual showcase
+python showcase.py
+
+# Analyze with sample signatures
+python forensic_handwriting_analyzer.py \
+  --baseline examples/sample_baseline_data.json \
+  --questioned examples/signature_questioned.png
 ```
+
+### Sample Files
+- `examples/signature_authentic_01.png` - Sample authentic signatures
+- `examples/signature_questioned.png` - Questioned signature to analyze
+- `examples/sample_baseline_data.json` - Pre-computed baseline stats
+- `sample_output/forensic_report.txt` - Example analysis report
 
 ---
 

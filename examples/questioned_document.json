@@ -1,0 +1,13 @@
+{
+  "document_id": "QD-2025-0142",
+  "document_type": "contract_signature",
+  "image_file": "examples/signature_questioned.png",
+  "extraction_notes": "Signature extracted from page 3, bottom right corner",
+  "compare_to_baseline": "examples/sample_baseline_data.json",
+  "analysis_options": {
+    "use_ai_verification": true,
+    "ai_models": ["claude", "gpt4v"],
+    "generate_report": true,
+    "confidence_threshold": 0.70
+  }
+}

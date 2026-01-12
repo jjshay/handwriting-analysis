@@ -1,0 +1,23 @@
+{
+  "baseline_info": {
+    "subject_name": "John Doe",
+    "sample_count": 70,
+    "collection_date": "2025-01-01",
+    "document_types": ["checks", "contracts", "letters"]
+  },
+  "baseline_statistics": {
+    "slant_angle": {"mean": 71.5, "std": 4.2, "unit": "degrees"},
+    "height_ratio": {"mean": 2.6, "std": 0.3, "unit": "ratio"},
+    "aspect_ratio": {"mean": 2.8, "std": 0.4, "unit": "ratio"},
+    "stroke_width": {"mean": 3.8, "std": 0.8, "unit": "pixels"},
+    "pressure_variance": {"mean": 0.25, "std": 0.08, "unit": "normalized"},
+    "connectedness": {"mean": 0.62, "std": 0.10, "unit": "ratio"},
+    "loop_ratio": {"mean": 0.35, "std": 0.08, "unit": "ratio"}
+  },
+  "sample_files": [
+    "examples/signature_authentic_01.png",
+    "examples/signature_authentic_02.png",
+    "examples/signature_authentic_03.png"
+  ],
+  "notes": "Baseline established from 70 verified authentic signatures collected over 6-month period."
+}
