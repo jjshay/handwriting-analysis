@@ -16,3 +16,4 @@ aiohttp>=3.8.0             # Async HTTP
 
 # Optional - Report generation
 reportlab>=4.0.0           # PDF reports
+rich>=13.0.0
