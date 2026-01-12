@@ -11,7 +11,7 @@
 
 **Forensic-grade signature and handwriting analysis - statistical comparison for authentication.**
 
-![Demo](demo.gif)
+![Demo Screenshot](assets/demo.png)
 
 ---
 
