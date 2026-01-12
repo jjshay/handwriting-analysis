@@ -1,11 +1,14 @@
 # Handwriting Analysis System
 
+![CI](https://github.com/jjshay/handwriting-analysis/workflows/CI/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-enabled-brightgreen.svg)
 ![AI Optional](https://img.shields.io/badge/AI-optional-lightgrey.svg)
 
 **Forensic-grade signature and handwriting analysis - statistical comparison for authentication.**
+
+![Demo](demo.gif)
 
 ---
 
