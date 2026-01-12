@@ -59,6 +59,49 @@ python forensic_handwriting_analyzer.py \
 
 ---
 
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph Baseline["Baseline Creation"]
+        A[Authentic Samples] --> B[Image Preprocessing]
+        B --> C[Feature Extractor]
+        C --> D[Statistical Analyzer]
+        D --> E[Baseline Model]
+    end
+
+    subgraph Analysis["Document Analysis"]
+        F[Questioned Document] --> G[Image Preprocessing]
+        G --> H[Feature Extractor]
+    end
+
+    subgraph Comparison["Statistical Comparison"]
+        E --> I[Feature Comparison]
+        H --> I
+        I --> J[Z-Score Calculator]
+        J --> K[Mahalanobis Distance]
+        K --> L[Probability Engine]
+    end
+
+    subgraph Optional["Optional: AI Review"]
+        H --> M1[Claude]
+        H --> M2[GPT-4]
+        H --> M3[Gemini]
+        H --> M4[Grok]
+        M1 & M2 & M3 & M4 --> N[AI Consensus]
+    end
+
+    subgraph Output
+        L --> O[Confidence Score]
+        N --> O
+        O --> P[Forensic Report]
+    end
+
+    style A fill:#e1f5fe
+    style F fill:#fff9c4
+    style P fill:#c8e6c9
+```
+
 ## How It Works
 
 ```
